@@ -9,7 +9,7 @@ html, body {
 
 /* Wrapper for page content to push down footer */
 #wrap {
-  padding-bottom: 50px;	
+  padding-bottom: 50px;
   min-height: 100%;
   height: auto;
   /* Negative indent footer by its height */
@@ -127,6 +127,21 @@ html, body {
   padding-top: -10px;
   text-align: left;
 }
+.social ul
+{
+margin: 0;
+padding: 20px;
+list-style-type: none;
+text-align: center;
+}
+
+.social ul li { display: inline; }
+
+.social ul li a:hover
+{
+color: #fff;
+background-color: #369;
+}
 .social-links {
   display: block;
   margin: 0 auto;
@@ -134,22 +149,30 @@ html, body {
   width: 100%;
   text-align: center;
   animation: fade 1s ease 1s both;
+  overflow: hidden;
 }
-.social-links li {
+.social-links > li {
   display: inline-block;
-  padding: 5px;
-  padding-top: 0;
-  text-align: center;
 }
 .social-links li a {
-  font-size: 20px;
   color: #000;
-  padding: 10px;
+  padding: 5px;
   padding-bottom: 4px;
   transition: all .4s ease;
 }
-.social-links li a:hover {
-  color: #000;
+/*.social-links {
+    display: block;
+    bottom: 50px;
+    left: 50%;
+    list-style-type: none;
+    margin-left: -237px;
+    padding: 0;
+    position: fixed;
+    width: 475px;
+    animation: fade 1s ease 1s both;
+}*/
+.social-links:hover {
+  opacity: 1;
 }
 .avatar {
   padding-top: 5%;
@@ -189,5 +212,5 @@ div.footer{
 /*.footer {
   height: 50px;
   padding-bottom: 15px;
-  
+
 }*/
